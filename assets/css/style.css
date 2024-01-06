@@ -166,6 +166,16 @@ article {
   margin: 16px 0;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 15px;
+}
+
+
 .icon-box {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -856,7 +866,7 @@ main {
 
 
 /*-----------------------------------*\
-  #PORTFOLIO
+  #development
 \*-----------------------------------*/
 
 .filter-list { display: none; }
@@ -1015,18 +1025,18 @@ main {
 
 
 /*-----------------------------------*\
-  #BLOG
+  #RESEARCH
 \*-----------------------------------*/
 
-.blog-posts { margin-bottom: 10px; }
+.research-posts { margin-bottom: 10px; }
 
-.blog-posts-list {
+.research-posts-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.blog-post-item > a {
+.research-post-item > a {
   position: relative;
   background: var(--border-gradient-onyx);
   height: 100%;
@@ -1035,7 +1045,7 @@ main {
   z-index: 1;
 }
 
-.blog-post-item > a::before {
+.research-post-item > a::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1044,25 +1054,25 @@ main {
   z-index: -1;
 }
 
-.blog-banner-box {
+.research-banner-box {
   width: 100%;
   height: 200px;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.blog-banner-box img {
+.research-banner-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
+.research-post-item > a:hover .research-banner-box img { transform: scale(1.1); }
 
-.blog-content { padding: 15px; }
+.research-content { padding: 15px; }
 
-.blog-meta {
+.research-meta {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1070,28 +1080,28 @@ main {
   margin-bottom: 10px;
 }
 
-.blog-meta :is(.blog-category, time) {
+.research-meta :is(.research-category, time) {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
-.blog-meta .dot {
+.research-meta .dot {
   background: var(--light-gray-70);
   width: 4px;
   height: 4px;
   border-radius: 4px;
 }
 
-.blog-item-title {
+.research-item-title {
   margin-bottom: 10px;
   line-height: 1.3;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
+.research-post-item > a:hover .research-item-title { color: var(--orange-yellow-crayola); }
 
-.blog-text {
+.research-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -1228,11 +1238,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #development, research 
    */
 
   .project-img,
-  .blog-banner-box { height: auto; }
+  .research-banner-box { height: auto; }
 
 }
 
@@ -1487,14 +1497,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG
+   * #development, research
    */
 
-  .project-img, .blog-banner-box { border-radius: 16px; }
+  .project-img, .research-banner-box { border-radius: 16px; }
 
-  .blog-posts-list { gap: 30px; }
+  .research-posts-list { gap: 30px; }
 
-  .blog-content { padding: 25px; }
+  .research-content { padding: 25px; }
 
 
 
@@ -1580,7 +1590,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * PORTFOLIO
+   * development
    */
 
   .article-title { padding-bottom: 20px; }
@@ -1606,9 +1616,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
+  /* development and research grid */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .project-list, .research-posts-list { grid-template-columns: 1fr 1fr; }
 
 
 
@@ -1725,7 +1735,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * PORTFOLIO
+   * development
    */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
@@ -1733,10 +1743,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * BLOG
+   * research
    */
 
-  .blog-banner-box { height: 230px; }
+  .research-banner-box { height: 230px; }
 
 }
 
