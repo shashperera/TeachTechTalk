@@ -1,5 +1,28 @@
 'use strict';
 
+// Get the mode toggle button and mode icon
+const modeToggle = document.getElementById('mode-toggle');
+const modeIcon = document.getElementById('mode-icon');
+
+// Function to toggle between light and dark mode
+function toggleDarkMode() {
+  const themeLink = document.getElementById('theme-link');
+  if (themeLink.href.includes('lightmode.css')) {
+    themeLink.href = './assets/css/darkmode.css'; // Switch to dark mode CSS
+    modeIcon.classList.remove('fa-sun');
+    modeIcon.classList.add('fa-moon');
+    modeIcon.style.color = '#fff'; // Change icon color for dark mode
+  } else {
+    themeLink.href = './assets/css/lightmode.css'; // Switch to light mode CSS
+    modeIcon.classList.remove('fa-moon');
+    modeIcon.classList.add('fa-sun');
+    modeIcon.style.color = '#333'; // Change icon color for light mode
+  }
+}
+
+// Add event listener to the mode toggle button
+modeToggle.addEventListener('click', toggleDarkMode);
+
 
 
 // element toggle function

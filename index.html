@@ -13,9 +13,10 @@
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
   <!--
-    - custom css link
+    - custom css linka
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- <link id="theme-link rel="stylesheet" href="./assets/css/darkmode.css" id="dark-mode"> -->
+  <link id="theme-link" rel="stylesheet" href="./assets/css/lightmode.css" id="light-mode">
 
   <!--
     - google font link
@@ -23,6 +24,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Add Font Awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -30,6 +35,9 @@
   <!--
     - #MAIN
   -->
+  <button id="mode-toggle" class="mode-toggle">
+    <i id="mode-icon" class="fas fa-sun"></i> <!-- Initial icon for light mode -->
+  </button>
 
   <main>
 
@@ -48,7 +56,7 @@
         <div class="info-content">
           <h1 class="name" title="Sanduni Perera">Sanduni Perera</h1>
 
-          <p class="title"> Researcher | Developer</p>
+          <p class="title"> Passionate Teaching | Powerful Coding </p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -72,7 +80,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <!-- <p class="contact-title">Email</p> -->
 
               <a href="mailto:shashi.perera@outlook.com" class="contact-link">shashi.perera@outlook.com</a>
             </div>
@@ -86,29 +94,13 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
+              <!-- <p class="contact-title">Phone</p> -->
               <a href="tel:+358417236359" class="contact-link">+358 (41) 7236359</a>
-              <a href="tel:+94766849741" class="contact-link">+94 (76) 6849741</a>
-
             </div>
 
           </li>
 
-          <!-- <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li> -->
-
+ 
           <li class="contact-item">
 
             <div class="icon-box">
@@ -116,8 +108,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
-
+              <!-- <p class="contact-title">Location</p> -->
               <address>Linnoituksentie 10 A, HELSINKI, Finland</address>
             </div>
 
@@ -131,25 +122,26 @@
 
           <li class="social-item">
             <a href="https://www.linkedin.com/in/sanduni-shashipraba-perera-30723a16a/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
+              <ion-icon name="logo-linkedin" class="ion-2"></ion-icon>
             </a>
           </li>
 
-          <li class="social-item">
-            <a href="https://orcid.org/0000-0002-8644-9700" class="social-link">
-              <ion-icon name="link"></ion-icon>
-            </a>
-          </li>
 
           <li class="social-item">
             <a href="https://github.com/shashperera" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
+              <ion-icon name="logo-github" class="ion-2"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
             <a href="https://medium.com/@shashipraba.56" class="social-link">
-              <ion-icon name="logo-medium"></ion-icon>
+              <ion-icon name="logo-medium" class="ion-2"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://orcid.org/0000-0002-8644-9700" class="social-link">
+              <ion-icon name="link" class="ion-2"></ion-icon>
             </a>
           </li>
 
