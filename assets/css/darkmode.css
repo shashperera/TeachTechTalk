@@ -2,7 +2,7 @@
 .mode-toggle {
   position: fixed;
   top: 20px;
-  right: 30px;
+  right: 60px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -232,6 +232,12 @@ article.active {
 @keyframes fade {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+p a {
+  display: inline; /* Ensures the link stays inline */
+  color: #9494e0;
+  text-decoration: underline;
 }
 
 .h2,
