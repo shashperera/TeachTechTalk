@@ -100,7 +100,7 @@
 
           </li>
 
- 
+
           <li class="contact-item">
 
             <div class="icon-box">
@@ -177,8 +177,6 @@
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
-
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Development</button>
           </li>
@@ -187,8 +185,15 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>Blog</button>
           </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Books</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li> -->
 
         </ul>
 
@@ -211,7 +216,8 @@
         <section class="about-text">
           <p>
             Hello! I'm Sanduni Perera, currently a frontend/full-stack developer based in Helsinki and formerly, I
-            served as an <a href="https://www.sliit.lk/faculty-of-computing/staff/sanduni.p/"> Assistant lecturer</a> at SLIIT (Sri Lanka Institute of Information Technology), Department of
+            served as an <a href="https://www.sliit.lk/faculty-of-computing/staff/sanduni.p/"> Assistant lecturer</a> at
+            SLIIT (Sri Lanka Institute of Information Technology), Department of
             Computer Systems and Software Engineering.
             My academic journey includes an MSc in Information Technology and a BSc(Hons) in Software Engineering.
           </p>
@@ -238,24 +244,6 @@
           <h3 class="h3 service-title">What I'm doing</h3>
 
           <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Research</h4>
-
-                <p class="service-item-text">
-                  My research interests : Software Development, Computer Vision with a focus in Human Health.
-                </p>
-              </div>
-
-            </li>
-
             <li class="service-item">
 
               <div class="service-icon-box">
@@ -271,6 +259,24 @@
               </div>
 
             </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Teach</h4>
+
+                <p class="service-item-text">
+                  Lecturer in Software Engineering.
+                </p>
+              </div>
+
+            </li>
+
+
 
             <li class="service-item">
 
@@ -279,11 +285,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Ongoing Studies</h4>
+                <h4 class="h4 service-item-title">Research</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
+                  My research interests : Software Development, Computer Vision with a focus in Human Health. </p>
               </div>
 
             </li>
@@ -457,9 +462,61 @@
           </section>
 
         </div>
+        <!--
+        - #CONTACT
+      -->
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7937.706352295871!2d24.91859128259448!3d60.173671100544986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d60.178126899999995!2d24.920229199999998!4m5!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2shelsinki!3m2!1d60.1698557!2d24.9383791!5e0!3m2!1sen!2sfi!4v1706128445371!5m2!1sen!2sfi"
+              width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <ul class="social-list" style="position: left;">
+
+            <li class="social-item">
 
 
+              <a href="https://www.linkedin.com/in/sanduni-shashipraba-perera-30723a16a/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
 
+            </li>
+            <li class="social-item">
+              <a href="mailto:shashipraba.56@gmail.com" class="contact-link">
+                <ion-icon name="mail"></ion-icon></a>
+            </li>
+          </ul>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
 
       </article>
 
@@ -1000,7 +1057,7 @@
               </a>
             </li>
 
-           
+
 
           </ul>
 
@@ -1077,9 +1134,12 @@
                   <h3 class="h3 research-item-title">ICAC Conference Paper 2023</h3>
 
                   <p class="research-text">
-                    This study investigates the development and application of a personalized, interactive virtual system to enhance dementia care and protect people with dementia.
-                    A significant challenge in providing care for individuals with dementia is the propensity to wander and become lost,
-                     which can lead to anxiety and distress for both the patient and the carers as well as safety concerns </p>
+                    This study investigates the development and application of a personalized, interactive virtual
+                    system to enhance dementia care and protect people with dementia.
+                    A significant challenge in providing care for individuals with dementia is the propensity to wander
+                    and become lost,
+                    which can lead to anxiety and distress for both the patient and the carers as well as safety
+                    concerns </p>
 
                 </div>
 
@@ -1087,7 +1147,8 @@
             </li>
 
             <li class="research-post-item">
-              <a href="https://www.linkedin.com/posts/sliit_sliit-icac-2022-organized-by-sliit-faculty-activity-7023914913630728192-fPpW/?originalSubdomain=lk">
+              <a
+                href="https://www.linkedin.com/posts/sliit_sliit-icac-2022-organized-by-sliit-faculty-activity-7023914913630728192-fPpW/?originalSubdomain=lk">
 
                 <figure class="research-banner-box">
                   <img src="./assets/images/SLIIT-Sunday-Times-2022.jpg" alt="ICAC Conference" loading="lazy">
@@ -1136,9 +1197,11 @@
                   <h3 class="h3 research-item-title">ICAC Conference 2021</h3>
 
                   <p class="research-text">
-                    The 3rd International Conference on Advancements in Computing -2021 (ICAC2021), was held virtually from the 9th to 11th of December 2021 as
-                     an open forum for academics along with industry professionals to present the latest findings and research output and practical deployments in the
-                      Computer Science and Information Technology domains. </p>
+                    The 3rd International Conference on Advancements in Computing -2021 (ICAC2021), was held virtually
+                    from the 9th to 11th of December 2021 as
+                    an open forum for academics along with industry professionals to present the latest findings and
+                    research output and practical deployments in the
+                    Computer Science and Information Technology domains. </p>
 
                 </div>
 
@@ -1179,71 +1242,261 @@
 
       </article>
 
-
-
-
-
       <!--
-        - #CONTACT
+        - #BLOG
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="blog" data-page="blog">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">Articles</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7937.706352295871!2d24.91859128259448!3d60.173671100544986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d60.178126899999995!2d24.920229199999998!4m5!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2shelsinki!3m2!1d60.1698557!2d24.9383791!5e0!3m2!1sen!2sfi!4v1706128445371!5m2!1sen!2sfi"
-              width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
+        <section class="research-posts">
 
-        <section class="contact-form">
+          <ul class="research-posts-list">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+            <li class="research-post-item">
+              <a
+                href="https://medium.com/@shashipraba.56/unlocking-sustainable-futures-the-finnish-technological-revolution-58dfb672f364">
 
-          <ul class="social-list" style="position: left;">
+                <figure class="research-banner-box">
+                  <img src="./assets/images/sus.jpg" alt="FIN Sus" loading="lazy">
+                </figure>
 
-            <li class="social-item">
+                <div class="research-content">
 
+                  <div class="research-meta">
+                    <p class="research-category">Sustainability</p>
 
-              <a href="https://www.linkedin.com/in/sanduni-shashipraba-perera-30723a16a/" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 11, 2024</time>
+                  </div>
+
+                  <h3 class="h3 research-item-title">Unlocking Sustainable Future</h3>
+
+                  <p class="research-text">
+                    In the global pursuit of sustainability, Finnish technology
+                    companies stand at the forefront, pioneering innovative practices, methods, and services geared
+                    towards a greener future.
+                  </p>
+
+                </div>
+
               </a>
-
             </li>
 
-            <li class="social-item">
+            <li class="research-post-item">
+              <a
+                href="https://medium.com/@shashipraba.56/react-coding-interview-questions-answers-with-coding-challenges-45a3cd50433d">
+
+                <figure class="research-banner-box">
+                  <img src="./assets/images/react.png" alt="React" loading="lazy">
+                </figure>
+
+                <div class="research-content">
+
+                  <div class="research-meta">
+                    <p class="research-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 22, 2023</time>
+                  </div>
+
+                  <h3 class="h3 research-item-title">React Coding Interview Questions & Answers with Coding Challenges
+                  </h3>
+
+                  <p class="research-text">
+                    A set of React Coding Interview Questions & Solutions for Coding Challenges with the code for your
+                    reference. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="research-post-item">
+              <a
+                href="https://medium.com/@shashipraba.56/leveraging-aws-cloudformation-with-advanced-filtering-techniques-for-resource-management-fc63727a465f">
+
+                <figure class="research-banner-box">
+                  <img src="./assets/images/aws.png" alt="AWS" loading="lazy">
+                </figure>
+
+                <div class="research-content">
+
+                  <div class="research-meta">
+                    <p class="research-category">Cloud</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 17, 2024</time>
+                  </div>
+
+                  <h3 class="h3 research-item-title">Leveraging AWS CloudFormation with Advanced Filtering Techniques
+                    for Resource Management</h3>
+
+                  <p class="research-text">
+                    In this article, we’ll explore how to combine the capabilities of AWS CloudFormation with effective
+                    filtering strategies to enhance resource management in AWS environments. </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="research-post-item">
+              <a href="https://medium.com/@shashipraba.56/running-linear-regression-on-jupyter-notebook-86bb10ffd20a">
+
+                <figure class="research-banner-box">
+                  <img src="./assets/images/ml.png" alt="ML" loading="lazy">
+                </figure>
+
+                <div class="research-content">
+
+                  <div class="research-meta">
+                    <p class="research-category">Machine Learning</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jan 14, 2024</time>
+                  </div>
+
+                  <h3 class="h3 research-item-title">Running Linear Regression on Jupyter notebook</h3>
+
+                  <p class="research-text">
+                    Jupyter notebook is a Python development environment that has configured with the necessary
+                    libraries to run Machine learning algorithms. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="research-post-item">
+              <a
+                href="https://medium.com/stackademic/enhancing-error-logging-in-typescript-applications-with-nest-js-error-filtering-0e17ee3d451b">
+
+                <figure class="research-banner-box">
+                  <img src="./assets/images/error.png" alt="error logging" loading="lazy">
+                </figure>
+
+                <div class="research-content">
+
+                  <div class="research-meta">
+                    <p class="research-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 28, 2024</time>
+                  </div>
+
+                  <h3 class="h3 research-item-title">Enhancing Error Logging</h3>
+
+                  <p class="research-text">
+                    In TypeScript applications, proper error handling and logging are vital for maintaining application
+                    health and ensuring a seamless user experience. By leveraging Nest.js Error Filtering alongside a
+                    custom Logging Service,
+                    developers can enhance error logging capabilities, enabling better debugging, monitoring, and
+                    maintenance of their applications.</p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="https://medium.com/@shashipraba.56">
+
+                <button class="see-more-button">SEE More</button>
 
 
-              <a href="mailto:shashipraba.56@gmail.com" class="contact-link">
-                <ion-icon name="mail"></ion-icon></a>
-
+              </a>
             </li>
 
           </ul>
 
+        </section>
 
-          <form action="#" class="form" data-form>
+      </article>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <!--
+        - #TEACHING
+      -->
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+      <article class="books" data-page="books">
 
-          </form>
+        <header>
+          <h2 class="h2 article-title">Books</h2>
+        </header>
+
+        <section class="research-posts">
+
+          <ul class="research-posts-list">
+
+            <li class="research-post-item">
+              <a href="https://www.amazon.co.uk/dp/B0CW1K2JTR">
+
+                <figure class="research-banner-box">
+                  <img src="./assets/images/book1.jpg" alt="Amazon Book 1" loading="lazy">
+                </figure>
+
+                <div class="research-content">
+
+                  <div class="research-meta">
+                    <p class="research-category">Enterprise Architecture</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 24, 2024</time>
+                  </div>
+
+                  <h3 class="h3 research-item-title">Proposal for an Enterprise Software Architecture for Hirdaramani
+                    Group</h3>
+
+                  <p class="research-text">
+                    In this study, one of the enterprise architecture frameworks,
+                    the OGAF TOGAF ADM (The Open Group Architecture Framework), will be used to aid in the development
+                    of applications for the CPO industry.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="research-post-item">
+              <a href="https://www.amazon.co.uk/dp/B0CNY7WPS7">
+
+                <figure class="research-banner-box">
+                  <img src="./assets/images/book2.jpg" alt="CICD" loading="lazy">
+                </figure>
+
+                <div class="research-content">
+
+                  <div class="research-meta">
+                    <p class="research-category">CI/CD</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Nov 24, 2023</time>
+                  </div>
+
+                  <h3 class="h3 research-item-title">CI CD Pipeline with AWS Devops</h3>
+
+                  <p class="research-text">
+                    This book is intended to assist you in learning the methods,
+                    AWS DevOps tools, strategies, and areas of expertise required to manage DevOps projects successfully
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+          </ul>
 
         </section>
 
